@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FEEL MY SYNAPSE</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div id="content">
+  
+
+ 
+    <label for="thefile" class="file">FEEL MY SYNAPSE
+      <input type="button" id="thefile">
+    </label>
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+       
+        <a target="_blank" href="https://on.soundcloud.com/nPiLp">STREAM</a>
+        <a href="audio/FEEL_MY_SYNAPSE.mp3" download>DOWNLOAD</a>
+        <a href="https://amandagamlen.github.io/em/pages/ime.html">EXIT</a>
+       
+      </div>
+    </div>
+    <audio id="audio"><source src="audio/FEEL_MY_SYNAPSE.mp3"></audio>
+    <div id="out"></div>
+  </div>
+  <!-- <div class="footer"><a href="index.html">EXIT</a></div> -->
+ <div class="footer"><span onclick="openNav()">IME</span></div>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "20%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js'></script>
+<script src='https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.3/dat.gui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.3.0/simplex-noise.min.js'></script>
+<script  src="fms.js"></script>
+</body>
+</html>
